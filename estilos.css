@@ -13,7 +13,7 @@ aside{
 aside .img-container {
    
     height: 100vh;
-    background-image:url("../Ejercicio2/img/montania.jpg");
+    background-image:url("img/montania.jpg");
     background-size: cover; 
 }
    
@@ -105,13 +105,15 @@ h3 {
     aside {
         width: 0%;  
     }
+    
+
     main .container {
         width: 100vw;
         height: 100vh;
         background:linear-gradient(
             0deg,
             rgba(0,0,0,.5),
-            rgba(0,0,0,.5) ),url("../Ejercicio2/img/montania.jpg");
+            rgba(0,0,0,.5) ),url("img/montania.jpg");
         
         background-size: cover;
     }
