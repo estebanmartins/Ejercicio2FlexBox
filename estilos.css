@@ -2,38 +2,43 @@ body {
     display:flex;
     font-size: 1em;
     margin:0;
+    padding:0;
+}
+
+aside{
+    width: 50%; 
 }
 
 
-aside, main{
-    width: 50%;
-    display:flex;
+aside .img-container {
+   
+    height: 100vh;
+    background-image:url("../Ejercicio2/img/montania.jpg");
+    background-size: cover; 
 }
-
+   
 
 main {
+    width:50%;
     background-color: #fff;
-    font-size:1em;  
+    font-size:1em;
 }
-
 
 
 form {
-    
+    height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+     justify-content: center;
+    align-items: center; 
     margin:0 auto;
 }
 
 
-
 form img {
     width: 110px;
-    margin-top:100px;
+    margin-top:50px;
 }
-
 
 
 main input {
@@ -43,12 +48,10 @@ main input {
      border:1px solid rgb(148, 146, 146)  
 }
 
-
 label:hover{
     font-weight: bold;
     cursor: pointer;
 }
-
 
 .checkbox {
     display: flex;
@@ -62,13 +65,11 @@ label:hover{
     width: 12px;
 }
 
-
 button{
     box-shadow: 5px 5px 20px rgb(234, 64, 64);
     border:none;
     font-weight: bolder;
 }
-
 
 button {
     width: 260px;
@@ -79,7 +80,6 @@ button {
     color:white;
     background-color:rgb(234, 64, 64);
 }
-
 
 button:hover {
     cursor:pointer;
@@ -95,6 +95,54 @@ h3 {
     
 
 
+/* Responsive    */
+      
+
+@media (max-width:800px)
+
+{
+    
+    aside {
+        width: 0%;  
+    }
+    main .container {
+        width: 100vw;
+        height: 100vh;
+        background:linear-gradient(
+            0deg,
+            rgba(0,0,0,.5),
+            rgba(0,0,0,.5) ),url("../Ejercicio2/img/montania.jpg");
+        
+        background-size: cover;
+    }
+
+
+    h3 {
+        font-weight: bold;
+    }
+    
+
+    label {
+        font-weight: bold;
+        color:white;
+    }
+
+
+    button{
+        box-shadow: 5px 5px 20px rgb(216, 17, 17);
+        border:none;
+        font-weight: bolder;
+    }
+
+
+    label:hover {
+        color:rgb(234, 226, 71);
+    }
+
+     
+
+    
+}
 
 
 
@@ -117,7 +165,9 @@ h3 {
 
 
 
-/* * {
+
+
+ /* {
     margin:0;
     box-sizing: border-box;
 }
@@ -139,12 +189,12 @@ body {
     display:flex;
     flex-direction:column;
     
-} 
+}  */
 
 
  /* img {
     width: 500px;
- } */
+ }
     
 
 #logo {
@@ -155,5 +205,5 @@ body {
     display: flex;
     flex-direction: column;
     
-} */
+} */ */
 
